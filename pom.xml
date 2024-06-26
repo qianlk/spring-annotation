@@ -12,6 +12,7 @@
   <modules>
     <module>a01_demo</module>
     <module>a02_anno_ioc</module>
+      <module>a03_basic_anno_2_5</module>
   </modules>
 
   <properties>
