@@ -54,7 +54,7 @@ public class CstImportSelector implements ImportSelector {
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
         // 1.定义扫描包的名称
         List<String> basePackages = null;
-        // 2. 判断@Import注解的类上是有还有@ComponentScan, !! 有就优先去扫对应的包
+        // 2. 判断@Import注解的类上是否还有@ComponentScan, !! 有就优先去扫对应的包
         if (importingClassMetadata.hasAnnotation(ComponentScan.class.getName())) {
             // 3. 取该注解的属性
             Map<String, Object> attributes = importingClassMetadata.getAnnotationAttributes(ComponentScan.class.getName());

@@ -21,11 +21,21 @@ class SpringConfigurationTest {
 //            System.out.println(name);
 //        }
 
-        UserService userService = ac.getBean("org.example.a04_import.service.impl.UserServiceImpl", UserService.class);
+        // import导入CstImportSelector 需要全限定类名
+//        UserService userService = ac.getBean("org.example.a04_import.service.impl.UserServiceImpl", UserService.class);
+//        userService.saveUser();
+
+        // 修改expression的aspectj表达式
+//        LogUtil log = ac.getBean("org.example.a04_import.service.utils.LogUtil", LogUtil.class);
+//        log.printLog();
+
+        // ==========================
+        // import导入CstImportBeanDefinitionRegistrar 需要短类名,第一个字母小写
+        UserService userService = ac.getBean("userServiceImpl", UserService.class);
         userService.saveUser();
 
         // 修改expression的aspectj表达式
-        LogUtil log = ac.getBean("org.example.a04_import.service.utils.LogUtil", LogUtil.class);
+        LogUtil log = ac.getBean("logUtil", LogUtil.class);
         log.printLog();
 
     }
