@@ -1,8 +1,7 @@
-package config;
+package org.example.b02_aspect.config;
 
-import org.example.b01_enable_aspectj_autoproxy.config.SpringConfig;
-import org.example.b01_enable_aspectj_autoproxy.domain.User;
-import org.example.b01_enable_aspectj_autoproxy.service.UserService;
+import org.example.b02_aspect.domain.User;
+import org.example.b02_aspect.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.ArrayList;
@@ -21,9 +20,9 @@ public class SpringConfigTest {
         user.setNickname("泰斯特");
         userService.saveUser(user);
 
-        List<User> users = new ArrayList<>();
-        users.add(user);
-        userService.saveBatchUser(users);
+//        List<User> users = new ArrayList<>();
+//        users.add(user);
+//        userService.saveBatchUser(users);
     }
 
 }

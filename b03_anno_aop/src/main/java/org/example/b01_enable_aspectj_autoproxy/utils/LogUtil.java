@@ -1,8 +1,7 @@
-package org.example.utils;
+package org.example.b01_enable_aspectj_autoproxy.utils;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,14 +10,14 @@ import org.springframework.stereotype.Component;
  * @Company http://www.itheima.com
  */
 @Component
-@Aspect
+@Aspect  // 表明当前类是一个切面类
 public class LogUtil {
 
     /**
      * 用于配置当前方法是一个前置通知
      */
 //    @Before("execution(* org.example.service.impl.*.*(..))")
-    @Before("execution(* org.example.service.impl.*.saveUser(..))")
+    @Before("execution(* org.example.b01_enable_aspectj_autoproxy.service.impl.*.saveUser(..))")
     public void printLog(){
         System.out.println("执行打印日志的功能");
     }

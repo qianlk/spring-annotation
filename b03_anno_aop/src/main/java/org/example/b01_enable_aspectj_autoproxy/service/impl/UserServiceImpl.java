@@ -1,7 +1,7 @@
-package org.example.service.impl;
+package org.example.b01_enable_aspectj_autoproxy.service.impl;
 
-import org.example.domain.User;
-import org.example.service.UserService;
+import org.example.b01_enable_aspectj_autoproxy.domain.User;
+import org.example.b01_enable_aspectj_autoproxy.service.UserService;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.stereotype.Service;
 

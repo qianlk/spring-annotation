@@ -1,4 +1,4 @@
-package org.example.domain;
+package org.example.b01_enable_aspectj_autoproxy.domain;
 
 import java.io.Serializable;
 import java.util.Date;
