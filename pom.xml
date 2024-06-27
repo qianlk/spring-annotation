@@ -14,6 +14,9 @@
     <module>a02_anno_ioc</module>
       <module>a03_basic_anno_2_5</module>
       <module>a04_bean_lifecycle</module>
+      <module>b01_aop_proxy</module>
+      <module>b02_aop_demo</module>
+      <module>b03_anno_aop</module>
   </modules>
 
   <properties>
