@@ -1,5 +1,7 @@
 package org.example.b01_enable_aspectj_autoproxy.domain;
 
+import org.springframework.context.annotation.Description;
+
 import java.io.Serializable;
 import java.util.Date;
 

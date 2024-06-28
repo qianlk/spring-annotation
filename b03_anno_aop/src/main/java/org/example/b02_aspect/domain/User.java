@@ -1,5 +1,7 @@
 package org.example.b02_aspect.domain;
 
+import org.springframework.context.annotation.Description;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -7,6 +9,7 @@ import java.util.Date;
  * @author 黑马程序员
  * @Company http://www.itheima.com
  */
+@Description("用户")
 public class User implements Serializable {
     private String id;
     private String username;

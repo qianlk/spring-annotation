@@ -17,7 +17,8 @@ public class SpringConfigTest {
         User user = new User();
         user.setId("1");
         user.setUsername("test");
-        user.setNickname("孙子"); // 泰斯特
+//        user.setNickname("孙子");
+        user.setNickname("泰斯特");
 
         // 1 可以在使用时,强制触发增强的实现类方法
 //        ValidateExtensionService validateExtensionService = (ValidateExtensionService) userService;

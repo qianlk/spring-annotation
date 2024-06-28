@@ -3,8 +3,7 @@ package org.example.b02_aspect.utils;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import org.example.b01_enable_aspectj_autoproxy.domain.User;
-import org.springframework.context.annotation.Scope;
+import org.example.b02_aspect.domain.User;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -35,9 +34,11 @@ public class LogUtil {
 
     /**
      * 用于配置当前方法是一个前置通知
+     * 匹配参数是否具有指定注解 @args
+     * 例如包含 @Description的User作为入参才能执行此方法
      */
 //    @Before("execution(* org.example.service.impl.*.*(..))")
-    @Before(value = "pointcut(user)", argNames = "user")
+    @Before(value = "pointcut(user) && @args(org.springframework.context.annotation.Description)", argNames = "user")
     public void printLog(User user){
         System.out.println("执行打印日志的功能" + user);
     }
