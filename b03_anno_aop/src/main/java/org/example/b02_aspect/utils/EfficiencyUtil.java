@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Aspect
-@Order(value = 2)  // 多个切面的执行顺序, 默认是按照类的首字母顺序, 可以通过指定 order 越小的值越先执行
+@Order(value = 2)  // 多个切面的执行顺序, 默认是按照类的首字母顺序(同一个切面相同的切入点也是按首字母排序), 可以通过指定 order 越小的值越先执行
 public class EfficiencyUtil {
 
     private Long time;
