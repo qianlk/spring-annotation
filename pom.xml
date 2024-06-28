@@ -18,6 +18,8 @@
         <module>b02_aop_demo</module>
         <module>b03_anno_aop</module>
       <module>c01_jdbc</module>
+        <module>c02_custom_jdbc</module>
+        <module>c03_custom_jdbc_test</module>
     </modules>
 
     <properties>
