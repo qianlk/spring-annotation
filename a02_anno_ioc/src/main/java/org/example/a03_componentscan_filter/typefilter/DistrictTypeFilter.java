@@ -17,6 +17,7 @@ import java.util.Properties;
  */
 public class DistrictTypeFilter extends AbstractTypeHierarchyTraversingFilter {
 
+    // 指定需要排除判断的包
     private static final String PATTERN_STANDARD = ClassUtils.convertClassNameToResourcePath("org.example.componentscan_filter.service.*.*");
 
     // spring 提供的 路径匹配器

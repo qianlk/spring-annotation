@@ -13,3 +13,8 @@ import org.springframework.context.annotation.PropertySource;
 @Import(JdbcConfig.class)
 public class SpringConfiguration {
 }
+
+/*
+@Configuration
+表明当前类是配置类,替换applicationContext.xml
+ */

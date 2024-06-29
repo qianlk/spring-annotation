@@ -7,6 +7,8 @@ import org.springframework.context.annotation.FilterType;
 
 /**
  * 模拟不同销售区域指定不同的实现方法
+ * 指定 excludeFilters 自定义的根据地区类型的排除扫描包
+ *
  * @author qlk
  */
 @Configuration
