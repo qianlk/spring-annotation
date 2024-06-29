@@ -20,6 +20,7 @@
       <module>c01_jdbc</module>
         <module>c02_custom_jdbc</module>
         <module>c03_custom_jdbc_test</module>
+        <module>d01_tx</module>
     </modules>
 
     <properties>
