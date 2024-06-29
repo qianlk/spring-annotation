@@ -13,6 +13,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan("org.example")
 @Import({JdbcConfig.class, TransactionManagerConfig.class})
 @PropertySource("classpath:jdbc.properties")
-@EnableTransactionManagement
+@EnableTransactionManagement  // 开启spring事务注解的支持
 public class SpringConfig {
 }
